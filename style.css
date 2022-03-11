@@ -1,10 +1,40 @@
+:root {
+    --bg-dark: #000000;
+    --color-gold: #BDAE82;
+    --color-white: #ffffff;
+  }
+  
+  html{
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+    overflow-x: hidden;
+  }
+  *, *::before, *::after{
+    box-sizing: inherit;
+  }
+
 body {
     display: flex;
     margin-top: 50px;
-    justify-content: center;
+    justify-content: space-between;
     background-color: #FFFCFF;
 }
-  
+
+.empty{
+    
+    color: hsl(187, 71%, 43%);
+    margin-bottom: 60px;
+    
+      
+}
+
+.backlog{
+    height: 700px;
+    width: 300px;
+    background-color: #58bae4;
+}
+
+
 button {
     width: 75px;
     cursor: pointer;
@@ -55,7 +85,7 @@ button {
     margin: 5px;
     box-shadow: 0px 0px 3px #CBD4C2;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
   }
   .day:hover {

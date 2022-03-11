@@ -5,7 +5,8 @@ let url = 'https://varankin_dev.elma365.ru/api/extensions/2a38760e-083a-4dd0-aeb
 async function getUsers() {
     let resU = await fetch(url);
     let data1 = await resU.json();
-    console.log(data1);    
+    console.log(data1); 
+    showU(data1);   
    
 }
 getUsers();
@@ -21,6 +22,14 @@ async function getTasks() {
    
 }
 getTasks();
+
+
+const newText = document.querySelector('p');
+
+function showU(data1) {
+    newText.textContent = data1[2].text;
+}
+
 
 //
 
