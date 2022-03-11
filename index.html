@@ -12,7 +12,12 @@
         <title>Schedule</title>
     </head>
     <body>
-        <div class="empty">Fuuuuck</div>
+        <div class="empty-container">
+            <div class="empty">Влад</div>
+            <div class="empty">Борис</div>
+            <div class="empty">Борис</div>
+        </div>
+        
         <div id="container">
             <div id="header">
                 <div id="monthDisplay"></div>
@@ -56,9 +61,53 @@
 
         <div id="modalBackDrop"></div>
 
-        <div class="backlog">
-                work bitch
-        </div>
+        <div class="example-parent">
+            <h1>Backlog</h1>
+            <div class="example-origin">
+              To-do
+              <div
+                id="draggable-1"
+                class="example-draggable"
+                draggable="true"
+                ondragstart="onDragStart(event);"
+              >
+                task 1
+              </div>
+              <div
+                id="draggable-2"
+                class="example-draggable"
+                draggable="true"
+                ondragstart="onDragStart(event);"
+              >
+                task 2
+              </div>
+              <div
+                id="draggable-3"
+                class="example-draggable"
+                draggable="true"
+                ondragstart="onDragStart(event);"
+              >
+                task 3
+              </div>
+              <div
+                id="draggable-4"
+                class="example-draggable"
+                draggable="true"
+                ondragstart="onDragStart(event);"
+              >
+                task 4
+              </div>
+            </div>
+          
+            <div
+              class="example-dropzone"
+              ondragover="onDragOver(event);"
+              ondrop="onDrop(event);"
+            >
+              Done
+            </div>
+          </div>
+          
 
         <script src="./app.js"></script> 
     </body>

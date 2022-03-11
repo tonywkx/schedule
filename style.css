@@ -20,19 +20,69 @@ body {
     background-color: #FFFCFF;
 }
 
+.empty-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 200px;
+}
+
 .empty{
-    
-    color: hsl(187, 71%, 43%);
-    margin-bottom: 60px;
-    
-      
+    color: hsl(0, 0%, 100%);
+    width: 100px;
+    height: 100px;
+    margin-left: 30px;
+    background-color: #1b317a;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .backlog{
     height: 700px;
     width: 300px;
     background-color: #58bae4;
+    margin-right: 30px;
 }
+
+
+
+
+
+.example-parent {
+    border: 2px solid #DFA612;
+    color: black;
+    display: block;
+
+    font-family: sans-serif;
+    font-weight: bold;
+    width: 300px;
+    margin-right: 30px;
+  }
+  
+  .example-origin {
+    flex-basis: 100%;
+    flex-grow: 1;
+    padding: 10px;
+  }
+  
+  .example-draggable {
+    background-color: #4AAE9B;
+    font-weight: normal;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+  }
+  
+  .example-dropzone {
+    background-color: #6DB65B;
+    flex-basis: 100%;
+    flex-grow: 1;
+    padding: 10px;
+  }
+
+
 
 
 button {
@@ -43,7 +93,7 @@ button {
     outline: none;
     padding: 5px;
     border-radius: 5px;
-    color: white;
+    color: rgb(255, 255, 255);
 }
   
   #header {
@@ -55,7 +105,7 @@ button {
     justify-content: space-between;
   }
   #header button {
-    background-color:#92a1d1;
+    background-color:#1b317a;
   }
   #container {
     width: 770px;
@@ -89,11 +139,11 @@ button {
     justify-content: space-between;
   }
   .day:hover {
-    background-color: #e8faed;
+    background-color: #b8f1c9;
   }
   
   .day + #currentDay {
-    background-color:#e8f4fa;
+    background-color:#bbe5fa;
   }
   .event {
     font-size: 10px;
